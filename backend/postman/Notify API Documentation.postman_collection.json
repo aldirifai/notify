@@ -1,0 +1,4769 @@
+{
+	"info": {
+		"_postman_id": "f93ec4c2-77ec-43c5-92d5-dac5a3895888",
+		"name": "Notify API Documentation",
+		"description": "Documentation API for netify system",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28296448"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Pendaftaran",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "",
+									"description": "Isi dengan nama",
+									"type": "text"
+								},
+								{
+									"key": "username",
+									"value": "",
+									"description": "Isi dengan username",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "",
+									"description": "Isi dengan email",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "",
+									"description": "Isi dengan nomor HP",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "Isi dengan password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/register",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Pendaftaran Sukses",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Aldi",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "aldi",
+											"description": "Isi dengan username",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "aldi@gmail.com",
+											"description": "Isi dengan email",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "08223723233",
+											"description": "Isi dengan nomor HP",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "Isi dengan password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:27:39 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:27:39 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Pendaftaran berhasil\",\n    \"data\": {\n        \"user\": {\n            \"name\": \"Aldi\",\n            \"username\": \"aldi\",\n            \"email\": \"aldi@gmail.com\",\n            \"phone\": \"08223723233\",\n            \"id\": 12\n        },\n        \"token\": \"1|aoM8IfURz81jUW6D3ZsGF4n4trSCXPf2QKPTrJBc376c898d\"\n    }\n}"
+						},
+						{
+							"name": "Pendaftaran Gagal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Aldi",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "aldi",
+											"description": "Isi dengan username",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "aldi@gmail.com",
+											"description": "Isi dengan email",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "08223723233",
+											"description": "Isi dengan nomor HP",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "Isi dengan password",
+											"type": "text",
+											"disabled": true
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/register",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"register"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:28:54 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:28:54 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"message\": \"Username sudah terdaftar (dan 3 kesalahan lainnya)\",\n    \"errors\": {\n        \"username\": [\n            \"Username sudah terdaftar\"\n        ],\n        \"email\": [\n            \"Email sudah terdaftar\"\n        ],\n        \"phone\": [\n            \"Nomor telepon sudah terdaftar\"\n        ],\n        \"password\": [\n            \"Password harus diisi\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "username",
+									"value": "",
+									"description": "Isi dengan username / email / phone",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "",
+									"description": "Isi dengan password",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Login Sukses",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "aldi@gmail.com",
+											"description": "Isi dengan username / email / phone",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "12345678",
+											"description": "Isi dengan password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:29:36 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:29:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Login berhasil\",\n    \"data\": {\n        \"user\": {\n            \"id\": 12,\n            \"name\": \"Aldi\",\n            \"username\": \"aldi\",\n            \"email\": \"aldi@gmail.com\",\n            \"phone\": \"08223723233\",\n            \"email_verified_at\": null,\n            \"role\": \"user\"\n        },\n        \"token\": \"2|sbWSgGZdb8ZxPo4H3oEUTyXuDgtbeqbjJXvVEvls5ede8837\"\n    }\n}"
+						},
+						{
+							"name": "Login Gagal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "username",
+											"value": "aldi@gmail.com",
+											"description": "Isi dengan username / email / phone",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "23233e23",
+											"description": "Isi dengan password",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/login",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"login"
+									]
+								}
+							},
+							"status": "Unauthorized",
+							"code": 401,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:30:01 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:30:01 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"message\": \"Username atau password salah\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/auth/logout",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Logout Sukses",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:32:48 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:32:48 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Logout berhasil\"\n}"
+						},
+						{
+							"name": "Logout Gagal",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth/logout",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"logout"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:31:20 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:31:20 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"message\": \"Anda tidak memiliki akses.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "Profile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/auth/profile",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth",
+								"profile"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Profile Sukses",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth/profile",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:35:11 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:35:11 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"success\",\n    \"message\": \"Data user berhasil didapatkan\",\n    \"data\": {\n        \"id\": 12,\n        \"name\": \"Aldi\",\n        \"username\": \"aldi\",\n        \"email\": \"aldi@gmail.com\",\n        \"phone\": \"08223723233\",\n        \"email_verified_at\": null,\n        \"role\": \"user\"\n    }\n}"
+						},
+						{
+							"name": "Profile Gagal",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth/profile",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"profile"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "127.0.0.1:8000"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:33:41 GMT"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 30 Nov 2023 17:33:41 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.1.17"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"status\": \"error\",\n    \"message\": \"Anda tidak memiliki akses.\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Pengguna",
+			"item": [
+				{
+					"name": "Kategori",
+					"item": [
+						{
+							"name": "Semua Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Semua Data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/categories",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:43:51 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:43:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil ditampilkan\",\n    \"data\": [\n        {\n            \"id\": 13,\n            \"name\": \"Task\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Tagian\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Tagihan\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"description": "Isi dengan nama",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Tambah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Planing",
+													"description": "Isi dengan nama",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:44:29 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:44:29 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil ditambahkan\",\n    \"data\": {\n        \"name\": \"Planing\",\n        \"created_by\": 12,\n        \"id\": 14\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"description": "Isi dengan nama",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories/:category_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Liburan",
+													"description": "Isi dengan nama",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories/:category_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":category_id"
+											],
+											"variable": [
+												{
+													"key": "category_id",
+													"value": "12"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil diperbarui\",\n    \"data\": {\n        \"id\": 12,\n        \"name\": \"Liburan\",\n        \"created_by\": 12\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Hapus Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories/:category_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Liburan",
+													"description": "Isi dengan nama",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories/:category_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":category_id"
+											],
+											"variable": [
+												{
+													"key": "category_id",
+													"value": "12"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil diperbarui\",\n    \"data\": {\n        \"id\": 12,\n        \"name\": \"Liburan\",\n        \"created_by\": 12\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reminder",
+					"item": [
+						{
+							"name": "Semua Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Semua Data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:13:03 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:13:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditampilkan\",\n    \"data\": [\n        {\n            \"id\": 27,\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            },\n            \"category_id\": 1,\n            \"title\": \"Tagihan Listrik\",\n            \"description\": \"tagihan listrik bulanan rumah jl abc\",\n            \"repeat_type\": \"monthly\",\n            \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n            \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n            \"is_done\": false,\n            \"is_important\": true,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Niyaga Dadi Prasetya\",\n                \"created_by\": 2\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "",
+											"description": "Isi dengan judul",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "Isi engan deskripsi",
+											"type": "text"
+										},
+										{
+											"key": "repeat_type",
+											"value": "",
+											"description": "Isi dengan once,daily,weekly,monthly,yearly",
+											"type": "text"
+										},
+										{
+											"key": "notification_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam awal pengingat",
+											"type": "text"
+										},
+										{
+											"key": "deadline_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam deadline pengingat",
+											"type": "text"
+										},
+										{
+											"key": "is_important",
+											"value": "",
+											"description": "Isi dengan true jika ingin melabeli penting",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/reminders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Tambah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "1",
+													"description": "Isi dengan ID kategori",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "Tagihan Listrik",
+													"description": "Isi dengan judul",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "tagihan listrik bulanan rumah jl abc",
+													"description": "Isi engan deskripsi",
+													"type": "text"
+												},
+												{
+													"key": "repeat_type",
+													"value": "monthly",
+													"description": "Isi dengan once,daily,weekly,monthly,yearly",
+													"type": "text"
+												},
+												{
+													"key": "notification_date_time",
+													"value": "2023-11-30 14:00:00",
+													"description": "Isi dengan tanggal jam awal pengingat",
+													"type": "text"
+												},
+												{
+													"key": "deadline_date_time",
+													"value": "2023-12-01 12:00:00",
+													"description": "Isi dengan tanggal jam deadline pengingat",
+													"type": "text"
+												},
+												{
+													"key": "is_important",
+													"value": "true",
+													"description": "Isi dengan true jika ingin melabeli penting",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/reminders",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:58:20 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:58:20 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditambahkan\",\n    \"data\": {\n        \"category_id\": \"1\",\n        \"title\": \"Tagihan Listrik\",\n        \"description\": \"tagihan listrik bulanan rumah jl abc\",\n        \"repeat_type\": \"monthly\",\n        \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n        \"is_important\": true,\n        \"created_by\": 12,\n        \"id\": 26\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "",
+											"description": "Isi dengan judul",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "Isi engan deskripsi",
+											"type": "text"
+										},
+										{
+											"key": "repeat_type",
+											"value": "",
+											"description": "Isi dengan once,daily,weekly,monthly,yearly",
+											"type": "text"
+										},
+										{
+											"key": "notification_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam awal pengingat",
+											"type": "text"
+										},
+										{
+											"key": "deadline_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam deadline pengingat",
+											"type": "text"
+										},
+										{
+											"key": "is_important",
+											"value": "",
+											"description": "Isi dengan true jika ingin melabeli penting",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "26",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "1",
+													"description": "Isi dengan ID kategori",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "ubah",
+													"description": "Isi dengan judul",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "ubah tes",
+													"description": "Isi engan deskripsi",
+													"type": "text"
+												},
+												{
+													"key": "repeat_type",
+													"value": "once",
+													"description": "Isi dengan once,daily,weekly,monthly,yearly",
+													"type": "text"
+												},
+												{
+													"key": "notification_date_time",
+													"value": "2023-11-30 12:00:00",
+													"description": "Isi dengan tanggal jam awal pengingat",
+													"type": "text"
+												},
+												{
+													"key": "deadline_date_time",
+													"value": "2023-11-30 16:00:00",
+													"description": "Isi dengan tanggal jam deadline pengingat",
+													"type": "text"
+												},
+												{
+													"key": "is_important",
+													"value": "false",
+													"description": "Isi dengan true jika ingin melabeli penting",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "26",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:00:59 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:00:59 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 26,\n        \"created_by\": 12,\n        \"category_id\": \"1\",\n        \"title\": \"ubah\",\n        \"description\": \"ubah tes\",\n        \"repeat_type\": \"once\",\n        \"notification_date_time\": \"2023-11-30T05:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-11-30T09:00:00.000000Z\",\n        \"is_done\": false,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:04:57 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:04:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditampilkan\",\n    \"data\": {\n        \"id\": 26,\n        \"created_by\": {\n            \"id\": 12,\n            \"name\": \"Aldi\",\n            \"username\": \"aldi\",\n            \"email\": \"aldi@gmail.com\",\n            \"phone\": \"08223723233\",\n            \"email_verified_at\": null,\n            \"role\": \"user\"\n        },\n        \"category_id\": 1,\n        \"title\": \"ubah\",\n        \"description\": \"ubah tes\",\n        \"repeat_type\": \"once\",\n        \"notification_date_time\": \"2023-11-30T05:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-11-30T09:00:00.000000Z\",\n        \"is_done\": false,\n        \"is_important\": true,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Niyaga Dadi Prasetya\",\n            \"created_by\": 2\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Hapus Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hapus Data",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "26",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:06:11 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:06:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil dihapus\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah selesai / belum",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah selesai / belum",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id/done",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id",
+												"done"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "27",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:15:47 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:15:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 27,\n        \"created_by\": 12,\n        \"category_id\": 1,\n        \"title\": \"Tagihan Listrik\",\n        \"description\": \"tagihan listrik bulanan rumah jl abc\",\n        \"repeat_type\": \"monthly\",\n        \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n        \"is_done\": true,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah penting / tidak",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id/important",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id",
+										"important"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah penting / tidak",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id/important",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id",
+												"important"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "27",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:16:23 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:16:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "55"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 27,\n        \"created_by\": 12,\n        \"category_id\": 1,\n        \"title\": \"Tagihan Listrik\",\n        \"description\": \"tagihan listrik bulanan rumah jl abc\",\n        \"repeat_type\": \"monthly\",\n        \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n        \"is_done\": true,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Admin",
+			"item": [
+				{
+					"name": "Managemen User",
+					"item": [
+						{
+							"name": "Semua Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Semua Data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:35:43 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:35:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil ditampilkan\",\n    \"data\": [\n        {\n            \"id\": 12,\n            \"name\": \"Aldi\",\n            \"username\": \"aldi\",\n            \"email\": \"aldi@gmail.com\",\n            \"phone\": \"08223723233\",\n            \"email_verified_at\": null,\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 1,\n            \"name\": \"Admin\",\n            \"username\": \"admin\",\n            \"email\": \"admin@example.com\",\n            \"phone\": \"081234567890\",\n            \"email_verified_at\": null,\n            \"role\": \"admin\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Kiandra Mardhiyah\",\n            \"username\": \"saefullah.kawaya\",\n            \"email\": \"dongoran.jaya@example.com\",\n            \"phone\": \"0619 5988 468\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 3,\n            \"name\": \"Ami Purwanti\",\n            \"username\": \"talia22\",\n            \"email\": \"adikara.agustina@example.com\",\n            \"phone\": \"(+62) 775 5621 5083\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 4,\n            \"name\": \"Salimah Wulandari\",\n            \"username\": \"lfarida\",\n            \"email\": \"kemal68@example.org\",\n            \"phone\": \"0583 5715 5389\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 5,\n            \"name\": \"Hilda Sudiati M.Kom.\",\n            \"username\": \"budiman.jasmani\",\n            \"email\": \"fitria59@example.com\",\n            \"phone\": \"0965 7579 5193\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 6,\n            \"name\": \"Juli Puspasari\",\n            \"username\": \"simbolon.kiandra\",\n            \"email\": \"owaskita@example.org\",\n            \"phone\": \"022 6451 4143\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 7,\n            \"name\": \"Ani Farida\",\n            \"username\": \"wibowo.hana\",\n            \"email\": \"prasetya58@example.net\",\n            \"phone\": \"0663 5768 030\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 8,\n            \"name\": \"Paulin Laksita S.Gz\",\n            \"username\": \"nabila.mardhiyah\",\n            \"email\": \"zrajata@example.org\",\n            \"phone\": \"0386 5626 792\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 9,\n            \"name\": \"Ghaliyati Puspita\",\n            \"username\": \"budiman.ciaobella\",\n            \"email\": \"mnamaga@example.com\",\n            \"phone\": \"0904 2112 559\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 10,\n            \"name\": \"Asmianto Sihombing\",\n            \"username\": \"elvina.namaga\",\n            \"email\": \"firgantoro.dalima@example.com\",\n            \"phone\": \"0400 9360 124\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Usman Eja Kurniawan\",\n            \"username\": \"yuliarti.syahrini\",\n            \"email\": \"diana.firmansyah@example.net\",\n            \"phone\": \"(+62) 703 3267 964\",\n            \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n            \"role\": \"user\"\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "",
+											"description": "Isi dengan username",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "",
+											"description": "Isi dengan email",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "",
+											"description": "Isi dengan nomor HP",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "",
+											"description": "Isi dengan password",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "",
+											"description": "Isi dengan admin, user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Tambah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Asli",
+													"description": "Isi dengan nama",
+													"type": "text"
+												},
+												{
+													"key": "username",
+													"value": "asli",
+													"description": "Isi dengan username",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "asli@gmail.com",
+													"description": "Isi dengan email",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "0834375",
+													"description": "Isi dengan nomor HP",
+													"type": "text"
+												},
+												{
+													"key": "password",
+													"value": "12345678",
+													"description": "Isi dengan password",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "user",
+													"description": "Isi dengan admin, user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:46:52 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:46:52 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil ditambahkan\",\n    \"data\": {\n        \"name\": \"Asli\",\n        \"username\": \"asli\",\n        \"email\": \"asli@gmail.com\",\n        \"phone\": \"0834375\",\n        \"role\": \"user\",\n        \"id\": 13\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "Berubah",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "username",
+											"value": "berubah",
+											"description": "Isi dengan username",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "email@gmail.com",
+											"description": "Isi dengan email",
+											"type": "text"
+										},
+										{
+											"key": "phone",
+											"value": "082746274",
+											"description": "Isi dengan nomor HP",
+											"type": "text"
+										},
+										{
+											"key": "role",
+											"value": "user",
+											"description": "Isi dengan admin, user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/:user_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "2",
+											"description": "Isi dengan ID user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Berubah",
+													"description": "Isi dengan nama",
+													"type": "text"
+												},
+												{
+													"key": "username",
+													"value": "berubah",
+													"description": "Isi dengan username",
+													"type": "text"
+												},
+												{
+													"key": "email",
+													"value": "email@gmail.com",
+													"description": "Isi dengan email",
+													"type": "text"
+												},
+												{
+													"key": "phone",
+													"value": "082746274",
+													"description": "Isi dengan nomor HP",
+													"type": "text"
+												},
+												{
+													"key": "role",
+													"value": "user",
+													"description": "Isi dengan admin, user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/:user_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":user_id"
+											],
+											"variable": [
+												{
+													"key": "user_id",
+													"value": "2",
+													"description": "Isi dengan ID user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:43:37 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:43:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil diperbarui\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Berubah\",\n        \"username\": \"berubah\",\n        \"email\": \"email@gmail.com\",\n        \"phone\": \"082746274\",\n        \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n        \"role\": \"user\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update Password",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "new_password",
+											"value": "",
+											"description": "Isi dengan password baru",
+											"type": "text"
+										},
+										{
+											"key": "new_password_confirmation",
+											"value": "",
+											"description": "Isi dengan konfirmasi password baru",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/users/:user_id/update-password",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":user_id",
+										"update-password"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "2",
+											"description": "Isi dengan ID user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update Password",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "new_password",
+													"value": "1232434",
+													"description": "Isi dengan password baru",
+													"type": "text"
+												},
+												{
+													"key": "new_password_confirmation",
+													"value": "1232434",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/users/:user_id/update-password",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":user_id",
+												"update-password"
+											],
+											"variable": [
+												{
+													"key": "user_id",
+													"value": "2",
+													"description": "Isi dengan ID user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:55:25 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:55:25 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Password berhasil diperbarui\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:user_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "2",
+											"description": "Isi dengan ID user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/:user_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":user_id"
+											],
+											"variable": [
+												{
+													"key": "user_id",
+													"value": "2",
+													"description": "Isi dengan ID user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:37:36 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:37:36 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"User berhasil ditampilkan\",\n    \"data\": {\n        \"id\": 2,\n        \"name\": \"Kiandra Mardhiyah\",\n        \"username\": \"saefullah.kawaya\",\n        \"email\": \"dongoran.jaya@example.com\",\n        \"phone\": \"0619 5988 468\",\n        \"email_verified_at\": \"2023-11-30T17:18:57.000000Z\",\n        \"role\": \"user\",\n        \"reminders\": [\n            {\n                \"id\": 1,\n                \"created_by\": 2,\n                \"category_id\": 1,\n                \"title\": \"vel\",\n                \"description\": \"Pariatur repellendus nobis inventore. Nostrum doloremque cupiditate consequatur iste. Dolores nisi quia officiis sit.\",\n                \"repeat_type\": \"once\",\n                \"notification_date_time\": \"2023-12-02T14:03:57.000000Z\",\n                \"deadline_date_time\": \"2023-12-05T11:24:57.000000Z\",\n                \"is_done\": false,\n                \"is_important\": false\n            },\n            {\n                \"id\": 2,\n                \"created_by\": 2,\n                \"category_id\": 4,\n                \"title\": \"et\",\n                \"description\": \"Asperiores repellendus optio sed perferendis delectus unde. Ducimus fugiat quo est ipsum quis. Esse nihil sunt est qui laboriosam aperiam non. Omnis sit ab voluptatibus autem aut.\",\n                \"repeat_type\": \"yearly\",\n                \"notification_date_time\": \"2023-12-04T16:08:57.000000Z\",\n                \"deadline_date_time\": \"2023-12-04T23:30:57.000000Z\",\n                \"is_done\": false,\n                \"is_important\": false\n            },\n            {\n                \"id\": 15,\n                \"created_by\": 2,\n                \"category_id\": 1,\n                \"title\": \"est\",\n                \"description\": \"Quia laborum officia iure beatae id perferendis eos. Quae nihil totam vitae distinctio quia sit fugiat quis. Qui vel odit quia sunt aliquam.\",\n                \"repeat_type\": \"weekly\",\n                \"notification_date_time\": \"2023-12-03T00:25:57.000000Z\",\n                \"deadline_date_time\": \"2023-12-04T22:39:57.000000Z\",\n                \"is_done\": true,\n                \"is_important\": false\n            },\n            {\n                \"id\": 22,\n                \"created_by\": 2,\n                \"category_id\": 1,\n                \"title\": \"omnis\",\n                \"description\": \"Laboriosam porro iste est nihil non tenetur et sed. Eligendi voluptatem nostrum doloremque et molestiae sit. Voluptates accusamus consequatur qui et excepturi.\",\n                \"repeat_type\": \"monthly\",\n                \"notification_date_time\": \"2023-12-02T05:38:57.000000Z\",\n                \"deadline_date_time\": \"2023-12-06T17:52:57.000000Z\",\n                \"is_done\": false,\n                \"is_important\": true\n            }\n        ],\n        \"categories\": [\n            {\n                \"id\": 1,\n                \"name\": \"Niyaga Dadi Prasetya\",\n                \"created_by\": 2\n            },\n            {\n                \"id\": 2,\n                \"name\": \"Kayla Rahmawati\",\n                \"created_by\": 2\n            },\n            {\n                \"id\": 4,\n                \"name\": \"Perkasa Uwais\",\n                \"created_by\": 2\n            }\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Hapus Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/users/:user_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"users",
+										":user_id"
+									],
+									"variable": [
+										{
+											"key": "user_id",
+											"value": "",
+											"description": "Isi dengan ID user"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hapus Data",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/users/:user_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"users",
+												":user_id"
+											],
+											"variable": [
+												{
+													"key": "user_id",
+													"value": "2",
+													"description": "Isi dengan ID user"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:56:14 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:56:14 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Berhasil menghapus user\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Kategori",
+					"item": [
+						{
+							"name": "Semua Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Semua Data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/categories",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:43:51 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:43:51 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil ditampilkan\",\n    \"data\": [\n        {\n            \"id\": 13,\n            \"name\": \"Task\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        },\n        {\n            \"id\": 12,\n            \"name\": \"Tagian\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        },\n        {\n            \"id\": 11,\n            \"name\": \"Tagihan\",\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "created_by",
+											"value": "",
+											"description": "Isi dengan ID user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Tambah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Fitnes",
+													"description": "Isi dengan nama",
+													"type": "text"
+												},
+												{
+													"key": "created_by",
+													"value": "3",
+													"description": "Isi dengan ID user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:58:05 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:58:05 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil ditambahkan\",\n    \"data\": {\n        \"name\": \"Fitnes\",\n        \"created_by\": \"3\",\n        \"id\": 15\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "",
+											"description": "Isi dengan nama",
+											"type": "text"
+										},
+										{
+											"key": "created_by",
+											"value": "4",
+											"description": "Isi dengan ID user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/categories/:category_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Outdoor",
+													"description": "Isi dengan nama",
+													"type": "text"
+												},
+												{
+													"key": "created_by",
+													"value": "4",
+													"description": "Isi dengan ID user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories/:category_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":category_id"
+											],
+											"variable": [
+												{
+													"key": "category_id",
+													"value": "15",
+													"description": "Isi dengan ID kategori"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:59:12 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:59:12 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil diperbarui\",\n    \"data\": {\n        \"id\": 15,\n        \"name\": \"Outdoor\",\n        \"created_by\": \"4\"\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Hapus Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/categories/:category_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"categories",
+										":category_id"
+									],
+									"variable": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "name",
+													"value": "Liburan",
+													"description": "Isi dengan nama",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/categories/:category_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"categories",
+												":category_id"
+											],
+											"variable": [
+												{
+													"key": "category_id",
+													"value": "12"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 17:47:37 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Kategori berhasil diperbarui\",\n    \"data\": {\n        \"id\": 12,\n        \"name\": \"Liburan\",\n        \"created_by\": 12\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Reminder",
+					"item": [
+						{
+							"name": "Semua Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Semua Data",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:13:03 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:13:03 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditampilkan\",\n    \"data\": [\n        {\n            \"id\": 27,\n            \"created_by\": {\n                \"id\": 12,\n                \"name\": \"Aldi\",\n                \"username\": \"aldi\",\n                \"email\": \"aldi@gmail.com\",\n                \"phone\": \"08223723233\",\n                \"email_verified_at\": null,\n                \"role\": \"user\"\n            },\n            \"category_id\": 1,\n            \"title\": \"Tagihan Listrik\",\n            \"description\": \"tagihan listrik bulanan rumah jl abc\",\n            \"repeat_type\": \"monthly\",\n            \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n            \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n            \"is_done\": false,\n            \"is_important\": true,\n            \"category\": {\n                \"id\": 1,\n                \"name\": \"Niyaga Dadi Prasetya\",\n                \"created_by\": 2\n            }\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Tambah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "",
+											"description": "Isi dengan judul",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "Isi engan deskripsi",
+											"type": "text"
+										},
+										{
+											"key": "repeat_type",
+											"value": "",
+											"description": "Isi dengan once,daily,weekly,monthly,yearly",
+											"type": "text"
+										},
+										{
+											"key": "notification_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam awal pengingat",
+											"type": "text"
+										},
+										{
+											"key": "deadline_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam deadline pengingat",
+											"type": "text"
+										},
+										{
+											"key": "is_important",
+											"value": "",
+											"description": "Isi dengan true jika ingin melabeli penting",
+											"type": "text"
+										},
+										{
+											"key": "created_by",
+											"value": "",
+											"description": "Isi dengan ID user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/reminders",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Tambah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "5",
+													"description": "Isi dengan ID kategori",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "Olahraga pagi",
+													"description": "Isi dengan judul",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "setelah bangun",
+													"description": "Isi engan deskripsi",
+													"type": "text"
+												},
+												{
+													"key": "repeat_type",
+													"value": "once",
+													"description": "Isi dengan once,daily,weekly,monthly,yearly",
+													"type": "text"
+												},
+												{
+													"key": "notification_date_time",
+													"value": "2023-12-01 06:00:00",
+													"description": "Isi dengan tanggal jam awal pengingat",
+													"type": "text"
+												},
+												{
+													"key": "deadline_date_time",
+													"value": "2023-12-01 06:30:00",
+													"description": "Isi dengan tanggal jam deadline pengingat",
+													"type": "text"
+												},
+												{
+													"key": "is_important",
+													"value": "false",
+													"description": "Isi dengan true jika ingin melabeli penting",
+													"type": "text"
+												},
+												{
+													"key": "created_by",
+													"value": "3",
+													"description": "Isi dengan ID user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/reminders",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders"
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 19:01:26 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 19:01:26 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditambahkan\",\n    \"data\": {\n        \"created_by\": \"3\",\n        \"category_id\": \"5\",\n        \"title\": \"Olahraga pagi\",\n        \"description\": \"setelah bangun\",\n        \"repeat_type\": \"once\",\n        \"notification_date_time\": \"2023-11-30T23:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-11-30T23:30:00.000000Z\",\n        \"is_important\": true,\n        \"id\": 28\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "category_id",
+											"value": "",
+											"description": "Isi dengan ID kategori",
+											"type": "text"
+										},
+										{
+											"key": "title",
+											"value": "",
+											"description": "Isi dengan judul",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "",
+											"description": "Isi engan deskripsi",
+											"type": "text"
+										},
+										{
+											"key": "repeat_type",
+											"value": "",
+											"description": "Isi dengan once,daily,weekly,monthly,yearly",
+											"type": "text"
+										},
+										{
+											"key": "notification_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam awal pengingat",
+											"type": "text"
+										},
+										{
+											"key": "deadline_date_time",
+											"value": "",
+											"description": "Isi dengan tanggal jam deadline pengingat",
+											"type": "text"
+										},
+										{
+											"key": "is_important",
+											"value": "",
+											"description": "Isi dengan true jika ingin melabeli penting",
+											"type": "text"
+										},
+										{
+											"key": "created_by",
+											"value": "",
+											"description": "Isi dengan ID user",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID rimender"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah Data",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"body": {
+											"mode": "formdata",
+											"formdata": [
+												{
+													"key": "category_id",
+													"value": "5",
+													"description": "Isi dengan ID kategori",
+													"type": "text"
+												},
+												{
+													"key": "title",
+													"value": "Olahraga",
+													"description": "Isi dengan judul",
+													"type": "text"
+												},
+												{
+													"key": "description",
+													"value": "setelah bangun",
+													"description": "Isi engan deskripsi",
+													"type": "text"
+												},
+												{
+													"key": "repeat_type",
+													"value": "once",
+													"description": "Isi dengan once,daily,weekly,monthly,yearly",
+													"type": "text"
+												},
+												{
+													"key": "notification_date_time",
+													"value": "2023-12-01 06:00:00",
+													"description": "Isi dengan tanggal jam awal pengingat",
+													"type": "text"
+												},
+												{
+													"key": "deadline_date_time",
+													"value": "2023-12-01 06:30:00",
+													"description": "Isi dengan tanggal jam deadline pengingat",
+													"type": "text"
+												},
+												{
+													"key": "is_important",
+													"value": "true",
+													"description": "Isi dengan true jika ingin melabeli penting",
+													"type": "text"
+												},
+												{
+													"key": "created_by",
+													"value": "3",
+													"description": "Isi dengan ID user",
+													"type": "text"
+												}
+											]
+										},
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "28"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 19:02:43 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 19:02:43 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 28,\n        \"created_by\": \"3\",\n        \"category_id\": \"5\",\n        \"title\": \"Olahraga\",\n        \"description\": \"setelah bangun\",\n        \"repeat_type\": \"once\",\n        \"notification_date_time\": \"2023-11-30T23:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-11-30T23:30:00.000000Z\",\n        \"is_done\": false,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Detail",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Detail",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:04:57 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:04:57 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "58"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil ditampilkan\",\n    \"data\": {\n        \"id\": 26,\n        \"created_by\": {\n            \"id\": 12,\n            \"name\": \"Aldi\",\n            \"username\": \"aldi\",\n            \"email\": \"aldi@gmail.com\",\n            \"phone\": \"08223723233\",\n            \"email_verified_at\": null,\n            \"role\": \"user\"\n        },\n        \"category_id\": 1,\n        \"title\": \"ubah\",\n        \"description\": \"ubah tes\",\n        \"repeat_type\": \"once\",\n        \"notification_date_time\": \"2023-11-30T05:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-11-30T09:00:00.000000Z\",\n        \"is_done\": false,\n        \"is_important\": true,\n        \"category\": {\n            \"id\": 1,\n            \"name\": \"Niyaga Dadi Prasetya\",\n            \"created_by\": 2\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Hapus Data",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Hapus Data",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "26",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:06:11 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:06:11 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "59"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil dihapus\"\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah selesai / belum",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id/done",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id",
+										"done"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah selesai / belum",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id/done",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id",
+												"done"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "27",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:15:47 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:15:47 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "57"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 27,\n        \"created_by\": 12,\n        \"category_id\": 1,\n        \"title\": \"Tagihan Listrik\",\n        \"description\": \"tagihan listrik bulanan rumah jl abc\",\n        \"repeat_type\": \"monthly\",\n        \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n        \"is_done\": true,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Ubah penting / tidak",
+							"request": {
+								"auth": {
+									"type": "bearer",
+									"bearer": [
+										{
+											"key": "token",
+											"value": "{{token}}",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/reminders/:reminder_id/important",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"reminders",
+										":reminder_id",
+										"important"
+									],
+									"variable": [
+										{
+											"key": "reminder_id",
+											"value": "",
+											"description": "Isi dengan ID reminder"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Ubah penting / tidak",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "application/json",
+												"type": "text"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/reminders/:reminder_id/important",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"reminders",
+												":reminder_id",
+												"important"
+											],
+											"variable": [
+												{
+													"key": "reminder_id",
+													"value": "27",
+													"description": "Isi dengan ID reminder"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Host",
+											"value": "127.0.0.1:8000"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:16:23 GMT"
+										},
+										{
+											"key": "Date",
+											"value": "Thu, 30 Nov 2023 18:16:23 GMT"
+										},
+										{
+											"key": "Connection",
+											"value": "close"
+										},
+										{
+											"key": "X-Powered-By",
+											"value": "PHP/8.1.17"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache, private"
+										},
+										{
+											"key": "Content-Type",
+											"value": "application/json"
+										},
+										{
+											"key": "X-RateLimit-Limit",
+											"value": "60"
+										},
+										{
+											"key": "X-RateLimit-Remaining",
+											"value": "55"
+										},
+										{
+											"key": "Access-Control-Allow-Origin",
+											"value": "*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"status\": \"success\",\n    \"message\": \"Reminder berhasil diperbarui\",\n    \"data\": {\n        \"id\": 27,\n        \"created_by\": 12,\n        \"category_id\": 1,\n        \"title\": \"Tagihan Listrik\",\n        \"description\": \"tagihan listrik bulanan rumah jl abc\",\n        \"repeat_type\": \"monthly\",\n        \"notification_date_time\": \"2023-11-30T07:00:00.000000Z\",\n        \"deadline_date_time\": \"2023-12-01T05:00:00.000000Z\",\n        \"is_done\": true,\n        \"is_important\": true\n    }\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}
